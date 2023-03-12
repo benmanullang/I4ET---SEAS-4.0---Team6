@@ -1,5 +1,4 @@
-byte blue;
-
+byte benhard;
 
 void setup() {
   pinMode(LED_BUILTIN, OUTPUT);
@@ -9,16 +8,16 @@ void setup() {
 void loop() {
   if (Serial.available())
   {
-    blue=Serial.read();
+    benhard=Serial.read();
   
-    if (blue == 66 )
+    if (benhard == 66 )
     {
-    Serial.println("ON");
+    Serial.println("Light: ON");
     digitalWrite(LED_BUILTIN, LOW); 
     }
-    if (blue == 68) 
+    if (benhard == 68) 
     {
-    Serial.println("OFF");
+    Serial.println("Light: OFF");
     digitalWrite(LED_BUILTIN, HIGH);
     }
   }
