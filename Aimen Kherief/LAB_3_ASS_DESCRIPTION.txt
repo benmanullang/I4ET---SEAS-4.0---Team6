@@ -1,0 +1,11 @@
+
+The components used :
+
+- Ultrasound sensor.
+- SMD RGB LED.
+
+Sketch description :
+
+The code controls the "RGB LED" relying on the values of distance registered by the "Ultrasound sensor" by switching between "Red LED" and "Green LED" depending on a limit value of distance (30 cm). Besides, it prints a Warning message when the limit value is reached, and gives the distance value as long it equals or is less than the limit value.
+
+REMARK : In the code uploaded in the group file, the Passive Buzzer is added to the system, which will give continues alarm when the limit value is registered. and our next step is to add the water level sensor.
